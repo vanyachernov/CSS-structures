@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    max-width: 300px;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+}
+
+.menu ul li:first-child a {
+    background-color: green;
+}
+
+.positioned-element {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    padding: 10px;
+    background-color: #ffa07a;
+    border: 1px solid #cc0000;
+}
+
+.jump-button {
+    margin: 20px 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #555555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: jump 0.5s ease-in-out infinite;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

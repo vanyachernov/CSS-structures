@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Демонстрація використання CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .header {
+            background-color: #6a95ff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        
+        .boxes {
+            display: flex;
+            width: 90%;
+            float: left;
+            padding: 5px;
+        }
+
+        .float-box {
+            width: 90%;
+            margin: 5px;
+            padding: 10px;
+            background-color: #e4e4e4;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">CSS Демонстрація</h1>
+    <p style="
+        color: darkblue; 
+        font-size: 18px;
+        padding: 20px 10px">
+        Тут я створив параграф з inline-стилем!
+    </p>
+    <div class="positioned-element">
+        Абсолютно позиціонований елемент
+    </div>
+    <div class="boxes">
+        <div class="float-box">Перший блок з обтіканням.</div>
+        <div class="float-box">Другий блок з обтіканням.</div>
+    </div>
+    <div style="clear: both;"></div>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <button class="jump-button">Button</button>
+</body>
+</html>
